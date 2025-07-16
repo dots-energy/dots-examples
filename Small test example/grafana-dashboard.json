@@ -1,0 +1,949 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 2,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "hiddenSeries": false,
+      "id": 6,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.4.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Phase1",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "Phase1",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "apparent_power_ph1"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "5c19dcff-b004-4644-99b9-f42d15a34f3a"
+            }
+          ]
+        },
+        {
+          "alias": "Phase2",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "Phase2",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "apparent_power_ph2"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "5c19dcff-b004-4644-99b9-f42d15a34f3a"
+            }
+          ]
+        },
+        {
+          "alias": "Phase3",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "Phase3",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "apparent_power_ph3"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "5c19dcff-b004-4644-99b9-f42d15a34f3a"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "House1 apparent power per phase",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:3688",
+          "format": "short",
+          "label": "VA",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:3689",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "hiddenSeries": false,
+      "id": 2,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.4.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "PV",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "PV-Dispatch",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "active_dispatch_pv"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "5c19dcff-b004-4644-99b9-f42d15a34f3a"
+            }
+          ]
+        },
+        {
+          "alias": "EV",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "EV Dispatch",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "active_dispatch_ev"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "5c19dcff-b004-4644-99b9-f42d15a34f3a"
+            }
+          ]
+        },
+        {
+          "alias": "HHP",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "HHP",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "active_dispatch_hhp"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "5c19dcff-b004-4644-99b9-f42d15a34f3a"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "House 1 dispatch flexible assets",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:82",
+          "format": "short",
+          "label": "W",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:83",
+          "format": "short",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "hiddenSeries": false,
+      "id": 4,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.4.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Phase1",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "Phase1",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "apparent_power_ph1"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "1412f71f-a9d2-4c66-a834-385cf91c3767"
+            }
+          ]
+        },
+        {
+          "alias": "Phase2",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "Phase2",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "apparent_power_ph2"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "1412f71f-a9d2-4c66-a834-385cf91c3767"
+            }
+          ]
+        },
+        {
+          "alias": "Phase3",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "EConnection",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "Phase3",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "apparent_power_ph3"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "1412f71f-a9d2-4c66-a834-385cf91c3767"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "House 2 apparent power",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:4056",
+          "format": "short",
+          "label": "VA",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:4057",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 9
+      },
+      "hiddenSeries": false,
+      "id": 8,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.4.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Transformer loading",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "EnergySystem",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "Cable Loading",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "transformer1"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "e48ed4fa-6051-4bab-ba54-27c581be21a0"
+            }
+          ]
+        },
+        {
+          "alias": "Transformer limit",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "linear"
+              ],
+              "type": "fill"
+            }
+          ],
+          "hide": false,
+          "measurement": "EnergySystem",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "Transformer Loading",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "transformer1_limit"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "simulation_id",
+              "operator": "=",
+              "value": "small-test-0895bb85"
+            },
+            {
+              "condition": "AND",
+              "key": "esdl_id",
+              "operator": "=",
+              "value": "e48ed4fa-6051-4bab-ba54-27c581be21a0"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Transformer loading",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:4372",
+          "format": "short",
+          "label": "MVA",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:4373",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "2020-08-10T22:00:00.000Z",
+    "to": "2020-08-13T22:00:00.000Z"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Test example dashboard",
+  "uid": "GCquh_yNk",
+  "version": 4
+}
