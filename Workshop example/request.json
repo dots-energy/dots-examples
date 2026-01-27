@@ -8,37 +8,37 @@
       {
         "esdl_type": "ElectricityDemand",
         "calc_service_name": "edemandservice",
-        "service_image_url": "ghcr.io/dots-energy-services/edemandservice:workshop-use-case",
+        "service_image_url": "ghcr.io/dots-energy-services/edemandservice:latest",
         "nr_of_models": 1
       }, 
       {
         "esdl_type": "EConnection",
         "calc_service_name": "emsservice",
-        "service_image_url": "ghcr.io/dots-energy-services/hemsworkshop:workshop-use-case",
+        "service_image_url": "ghcr.io/dots-energy-services/hemsworkshop:latest",
         "nr_of_models": 1
       }, 
       {
         "esdl_type": "EnergySystem",
         "calc_service_name": "lvnetworkservice",
-        "service_image_url": "ghcr.io/dots-energy-services/lvnetworkservice:update-dots-infra",
+        "service_image_url": "ghcr.io/dots-energy-services/lvnetworkservice:latest",
         "nr_of_models": 1
       }, 
       {
         "esdl_type": "PVInstallation",
         "calc_service_name": "pvsystemservice",
-        "service_image_url": "ghcr.io/dots-energy-services/pvsystemservice:workshop-use-case",
+        "service_image_url": "ghcr.io/dots-energy-services/pvsystemservice:latest",
         "nr_of_models": 1
       }, 
       {
         "esdl_type": "EnvironmentalProfiles",
         "calc_service_name": "EnvironmentalProfiles",
-        "service_image_url": "ghcr.io/dots-energy-services/weatherservice:workshop-use-case",
+        "service_image_url": "ghcr.io/dots-energy-services/weatherservice:latest",
         "nr_of_models": 1
       },
       {
         "esdl_type": "Battery",
         "calc_service_name": "examplebatteryservice",
-        "service_image_url": "ghcr.io/dots-energy-services/examplebatteryservice:max-charge-and-discharge-calculation",
+        "service_image_url": "ghcr.io/dots-energy-services/examplebatteryservice:latest",
         "nr_of_models": 1
       }
     ],
